@@ -13,6 +13,8 @@
 		671EDA2D249400980093F54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671EDA2B249400980093F54F /* Main.storyboard */; };
 		671EDA2F2494009A0093F54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671EDA2E2494009A0093F54F /* Assets.xcassets */; };
 		671EDA322494009A0093F54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671EDA302494009A0093F54F /* LaunchScreen.storyboard */; };
+		671EDA3A2494025B0093F54F /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671EDA392494025B0093F54F /* ProductsTableViewCell.swift */; };
+		671EDA3C249402820093F54F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671EDA3B249402820093F54F /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		671EDA2E2494009A0093F54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		671EDA312494009A0093F54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		671EDA332494009A0093F54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671EDA392494025B0093F54F /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		671EDA3B249402820093F54F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				671EDA2E2494009A0093F54F /* Assets.xcassets */,
 				671EDA302494009A0093F54F /* LaunchScreen.storyboard */,
 				671EDA332494009A0093F54F /* Info.plist */,
+				671EDA392494025B0093F54F /* ProductsTableViewCell.swift */,
+				671EDA3B249402820093F54F /* Product.swift */,
 			);
 			path = EcommerceApp;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				671EDA2A249400980093F54F /* ViewController.swift in Sources */,
+				671EDA3A2494025B0093F54F /* ProductsTableViewCell.swift in Sources */,
+				671EDA3C249402820093F54F /* Product.swift in Sources */,
 				671EDA26249400980093F54F /* AppDelegate.swift in Sources */,
 				671EDA28249400980093F54F /* SceneDelegate.swift in Sources */,
 			);
