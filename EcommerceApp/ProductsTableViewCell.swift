@@ -13,6 +13,8 @@ class ProductsTableViewCell: UITableViewCell {
     
     
     var callBackForAddToCart: (() -> ())?
+    var callBackForAddProdctInCart: (() -> ())?
+    var callBackForRemoveProductFromCart: (() -> ())?
     @IBOutlet weak var lblProductName: UILabel!
     @IBOutlet weak var lblProductPrice: UILabel!
     @IBOutlet weak var lblProductCount: UILabel!
@@ -24,8 +26,10 @@ class ProductsTableViewCell: UITableViewCell {
         // Initialization code
     }
     @IBAction func btnProductAddTapped(_ sender: UIButton) {
+        self.callBackForAddProdctInCart?()
     }
     @IBAction func btnProductRemoveTapped(_ sender: UIButton) {
+        callBackForRemoveProductFromCart?()
     }
     
     @IBAction func btnAddToCartTapped(_ sender: UIButton) {

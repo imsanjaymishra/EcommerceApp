@@ -13,10 +13,12 @@ class Product {
     var productName: String
     var productPrice: Int
     var isProductAddedToCart: Bool
-    init(productName: String, productPrice: Int, isProductAddedToCart: Bool) {
+    var productCount: Int
+    init(productName: String, productPrice: Int, isProductAddedToCart: Bool, productCount: Int) {
         self.productName = productName
         self.productPrice = productPrice
         self.isProductAddedToCart = isProductAddedToCart
+        self.productCount = productCount
     }
 }
 
@@ -25,24 +27,24 @@ class ListOfProduct {
     var productsArray: [Product] = []
     
     func addProdcutsInToList() -> [Product] {
-        let car = Product(productName: "Car", productPrice: 4000, isProductAddedToCart: false)
-        let mobile = Product(productName: "Mobile", productPrice: 1000, isProductAddedToCart: false)
-        let bike = Product(productName: "Bike", productPrice: 2000, isProductAddedToCart: false)
-        let laptop = Product(productName: "Laptop", productPrice: 2500, isProductAddedToCart: false)
-        let charger = Product(productName: "Charger", productPrice: 100, isProductAddedToCart: false)
-        let book = Product(productName: "Book", productPrice: 50, isProductAddedToCart: false)
-        let pen = Product(productName: "Pen", productPrice: 10, isProductAddedToCart: false)
-        let pencil = Product(productName: "Pencil", productPrice: 30, isProductAddedToCart: false)
-        let bat = Product(productName: "Bat", productPrice: 100, isProductAddedToCart: false)
-        let ball = Product(productName: "Ball", productPrice: 80, isProductAddedToCart: false)
-        let mango = Product(productName: "Mango", productPrice: 20, isProductAddedToCart: false)
-        let banana = Product(productName: "Banana", productPrice: 30, isProductAddedToCart: false)
-        let potato = Product(productName: "Potato", productPrice: 60, isProductAddedToCart: false)
-        let tomato = Product(productName: "Tomato", productPrice: 90, isProductAddedToCart: false)
-        let rise =  Product(productName: "Rise", productPrice: 40, isProductAddedToCart: false)
-        let spoon = Product(productName: "Spoon", productPrice: 200, isProductAddedToCart: false)
-        let glass = Product(productName: "Glass", productPrice: 300, isProductAddedToCart: false)
-        let comb = Product(productName: "Comb", productPrice: 5, isProductAddedToCart: false)
+        let car = Product(productName: "Car", productPrice: 4000, isProductAddedToCart: false, productCount: 0)
+        let mobile = Product(productName: "Mobile", productPrice: 1000, isProductAddedToCart: false, productCount: 0)
+        let bike = Product(productName: "Bike", productPrice: 2000, isProductAddedToCart: false, productCount: 0)
+        let laptop = Product(productName: "Laptop", productPrice: 2500, isProductAddedToCart: false, productCount: 0)
+        let charger = Product(productName: "Charger", productPrice: 100, isProductAddedToCart: false, productCount: 0)
+        let book = Product(productName: "Book", productPrice: 50, isProductAddedToCart: false, productCount: 0)
+        let pen = Product(productName: "Pen", productPrice: 10, isProductAddedToCart: false, productCount: 0)
+        let pencil = Product(productName: "Pencil", productPrice: 30, isProductAddedToCart: false, productCount: 0)
+        let bat = Product(productName: "Bat", productPrice: 100, isProductAddedToCart: false, productCount: 0)
+        let ball = Product(productName: "Ball", productPrice: 80, isProductAddedToCart: false, productCount: 0)
+        let mango = Product(productName: "Mango", productPrice: 20, isProductAddedToCart: false, productCount: 0)
+        let banana = Product(productName: "Banana", productPrice: 30, isProductAddedToCart: false, productCount: 0)
+        let potato = Product(productName: "Potato", productPrice: 60, isProductAddedToCart: false, productCount: 0)
+        let tomato = Product(productName: "Tomato", productPrice: 90, isProductAddedToCart: false, productCount: 0)
+        let rise =  Product(productName: "Rise", productPrice: 40, isProductAddedToCart: false, productCount: 0)
+        let spoon = Product(productName: "Spoon", productPrice: 200, isProductAddedToCart: false, productCount: 0)
+        let glass = Product(productName: "Glass", productPrice: 300, isProductAddedToCart: false, productCount: 0)
+        let comb = Product(productName: "Comb", productPrice: 5, isProductAddedToCart: false, productCount: 0)
         productsArray.append(car)
         productsArray.append(mobile)
         productsArray.append(bike)

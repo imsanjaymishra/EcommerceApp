@@ -34,6 +34,24 @@ extension ViewController {
                 self.productArray[indexPath.row].isProductAddedToCart = true
                 cell.btnAddToCart.isHidden = true
             }
+            
+            cell.lblProductCount.text = "\(productArray[indexPath.row].productCount)"
+            cell.callBackForAddProdctInCart = {
+                self.productArray[indexPath.row].productCount += 1
+                cell.lblProductCount.text = "\(self.productArray[indexPath.row].productCount)"
+            }
+            
+            cell.callBackForRemoveProductFromCart = {
+                if self.productArray[indexPath.row].productCount > 1 {
+                    self.productArray[indexPath.row].productCount -= 1
+                    cell.lblProductCount.text = "\(self.productArray[indexPath.row].productCount)"
+                } else {
+                    self.productArray[indexPath.row].productCount = 0
+                    cell.btnAddToCart.isHidden = false
+                    cell.lblProductCount.text = "\(self.productArray[indexPath.row].productCount)"
+                }
+            }
+            cell.selectionStyle = .none
             return cell
         }
       return UITableViewCell()
